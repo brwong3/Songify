@@ -1,0 +1,31 @@
+.SignIn {
+    width: 100vw;
+    height: 100vh;
+    background-color: #071330;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SignIn > h1 {
+    padding-bottom: 1vh;
+    font-size: max(40px,5rem);
+}
+
+.SignIn > h4 {
+    padding-bottom : 2vh;
+    font-size: 1rem;
+}
+
+.SignIn-Container {
+    height: 70vh;
+    width: max(30rem,35vw); 
+    background-color: #223490;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
