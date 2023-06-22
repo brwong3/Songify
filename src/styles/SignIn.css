@@ -20,12 +20,26 @@
 }
 
 .SignIn-Container {
-    height: 70vh;
+    height: min(70vh, 80rem);
     width: max(30rem,35vw); 
     background-color: #223490;
     border-radius: 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    padding-top: 5vh;
+}
+
+.SignIn-Container > div > input {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 5vh;
+    width: calc(max(30rem,35vw) * 0.8); 
+}
+
+.Authenticate > button{
+    margin-top: 5vh;
+    width: calc(max(30rem,35vw) * 0.6); 
+    height: 5vh;
+    font-size: 150%
 }

@@ -17,10 +17,17 @@ export default function SignIn() {
           ease: [0, 0.71, 0.2, 1.01]
         }} 
         className='SignIn-Container'>
-        
-        <p>Email:</p>
-        <input></input>
-
+        <div className='Email'>
+          <p>Email:</p>
+          <input></input>
+        </div>
+        <div className='Password'>
+          <p>Password:</p>
+          <input></input>
+        </div>
+        <div className='Authenticate'>
+          <button>Log In</button>
+        </div>
       </motion.div>
 
     </div>
