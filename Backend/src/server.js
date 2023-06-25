@@ -6,6 +6,11 @@ app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
 
+app.get("/CreateUser", (req,res) => {
+  
+})
+
+app.get("")
 
 // Initialize server
 app.listen(8800, () => {

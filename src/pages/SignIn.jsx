@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/SignIn.css"
 import { motion } from "framer-motion"
+import { createUserRequest } from '../utility/Constants';
 
 
 export default function SignIn() {
+
+  const[email, setEmail] = useState("");
+  const[password, setPassword] = useState("")
+
+  function createNewUser(email, password) {
+    
+  }
+
   return (
     <div className='SignIn'>
       <h1>Songify</h1>
@@ -19,14 +28,14 @@ export default function SignIn() {
         className='SignIn-Container'>
         <div className='Email'>
           <p>Email:</p>
-          <input></input>
+          <input type="text" value={email} onChange={(e) => {setEmail(e.target.value)}}></input>
         </div>
         <div className='Password'>
           <p>Password:</p>
-          <input></input>
+          <input type="password" value={password} onChange={(e) =>{setPassword(e.target.value)}}></input>
         </div>
         <div className='Authenticate'>
-          <button>Log In</button>
+          <button onClick={createNewUser(email,password)}>Log In</button>
         </div>
       </motion.div>
 
