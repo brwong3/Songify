@@ -6,26 +6,26 @@ Welcome to Songify! Your very own personalized Desktop Music Player complete wit
 
 Clone Songify to Your Local Machine With:
 
-### 'npm clone https://github.com/brwong3/Songify.git'
+### `npm clone https://github.com/brwong3/Songify.git`
 
 Afterwards, open the project with terminal or a text editor.
 
 Start the server by entering:
 
-### 'cd Backend'
-### 'npm i'
-### 'npm start'
+### `cd Backend`
+### `npm i`
+### `npm start`
 
 Afterwards:
 
-### 'cd...'
-### 'npm i'
-### ' npm start'
+### `cd...`
+### `npm i`
+### `npm start`
 
 This will initialize your React application which the Electron Framework uses for this project.
 
 Finally, to launch your Desktop application:
 
-### 'npm run .'
+### `npm run .`
 
 Enjoy!
