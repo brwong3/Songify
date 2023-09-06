@@ -1,1 +1,1 @@
-export const createUserRequest = "https://localhost.com/8800"
+export const serverRequest = "http://localhost:8800"

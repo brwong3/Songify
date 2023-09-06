@@ -1,0 +1,24 @@
+.NewSongPlaylistButton {
+    width: calc(100% - 0vw);
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vh;
+}
+
+.NewSongPlaylistButton > h1 {
+    padding-left: 1vw;
+    opacity: 100%;
+    font-size: 3vh;
+}
+
+.NewSongPlus {
+    background-color: hsl(222, 75%, 11%);
+    border: none;
+}
+
+.NewSongPlus > img {
+    width: 8vh;
+    height: 8vh;
+}

@@ -1,0 +1,155 @@
+.Main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B1320;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.Drawer {
+    background-color: #071330;
+    width: max(27vw, 20rem);
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    border-right: 1px solid white;
+    padding-top: 2vh;
+    color: white;
+}
+
+.Drawer > img {
+    width: 20vh;
+    height: 20vh;
+}
+
+.Drawer > h1 {
+    margin: 2vh;
+    font-size: 2.5rem;
+}
+
+.Content {
+    width: min(73vw, 100vw - 20rem);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Content::-webkit-scrollbar {
+    width: 1px;
+  }
+
+.Divider {
+    width: max(27vw, 20rem);
+    height: 2px;
+    background-color: white;
+}
+
+.Search-Button {
+    width: max(27vw, 20rem);
+    height: 10vh;
+    border: none;
+    background-color: #071330;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search-Button:hover {
+    opacity: 0.8;
+}
+
+.Search-Button > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search-Button > div > h2 {
+    margin-left: 1vw;
+    color: white;
+}
+
+.Search-Button > div > img {
+    height: 5vh;
+    width: 5vh;
+}
+
+.Playlists {
+    /* overflow-y:auto */
+    display: flex;
+    flex-direction: column;
+    width: max(27vw, 20rem);
+}
+
+.Playlists > div > h3 {
+    font-size: 1.75rem;
+    margin-left: 2vw;
+}
+
+.Plus {
+    background-color: #071330;
+    border: none;
+    margin-right: 2vw;
+    margin-top: 0.5vh;
+}
+
+.Playlists-Title {
+    width: max(27vw, 20rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1vh;
+}
+
+.New-Playlist {
+    /* width: max(27vw, 20rem);
+    height: 10vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.New-Playlist-Input {
+    width: max(23vw, 17rem);
+    height: 5vh;
+    border: none;
+    font-size: 2vh;
+    padding-left: 5px;
+    margin: auto;
+}
+
+.Playlist-List {
+    width: max(27vw, 20rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height: 50vh;
+    padding-bottom: 1vh;
+}
+
+.Playlist-List::-webkit-scrollbar {
+    display: none;
+}
+
+.Instructions {
+    opacity: 0.2;
+    display: flex;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Instructions > h1 {
+    margin-top: 2vh;
+    font-size: 2.25vw;
+}

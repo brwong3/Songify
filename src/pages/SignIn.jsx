@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../styles/SignIn.css"
 import { motion } from "framer-motion"
-import { createUserRequest } from '../utility/Constants';
+import { serverRequest } from '../utility/Constants';
 
 
 export default function SignIn() {
@@ -9,8 +9,20 @@ export default function SignIn() {
   const[email, setEmail] = useState("");
   const[password, setPassword] = useState("")
 
-  function createNewUser(email, password) {
-    
+
+
+  function createNewUser() {
+    fetch(`${serverRequest}/CreateUser`, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: "POST",
+      body: JSON.stringify({
+        "Email": email,
+        "Password": password
+      })
+    })
   }
 
   return (
@@ -35,10 +47,12 @@ export default function SignIn() {
           <input type="password" value={password} onChange={(e) =>{setPassword(e.target.value)}}></input>
         </div>
         <div className='Authenticate'>
-          <button onClick={createNewUser(email,password)}>Log In</button>
+          <button onClick={createNewUser}>Log In</button>
+        </div>
+        <div className="Google">
+          <button></button>
         </div>
       </motion.div>
-
     </div>
   )
 }

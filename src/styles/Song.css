@@ -1,0 +1,98 @@
+.SongContainer {
+    width: min(73vw * 1, 1*(100vw - 20rem));
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    user-select: none; 
+}
+
+.Song {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    width: min(73vw * 0.9,0.9 * (100vw - 20rem));
+    z-index: 0;
+    /* background-color: #071330; */
+    flex: 1;
+    cursor: none;
+}
+
+.Song > img {
+    width: 13.5vh;
+    height: 9.7vh;
+}
+
+.Song-MetaData {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 10vh;
+    justify-content: space-between;
+    padding-left: 1vw;
+    width: min(73vw - 22.5vh, (100vw - 20rem) - 22.5vh);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    cursor: none;
+    z-index: 10;
+}
+
+.Song-MetaData > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    padding-top: 1vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 5.5vh;
+    cursor: default;
+}
+
+.Song-MetaData > h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding-bottom: 1vh;
+    cursor: default;
+}
+
+.DownloadIcon {
+    height: 100px;
+    pointer-events: none;
+}
+
+.Delete-Btn {
+    width: 20%;
+    background-color: red;
+}
+
+.Delete {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+.Delete > img {
+    height: 5vh;
+    width: 5vh;
+}
+
+.RemoveSong {
+    width: min(73vw * 0.1, 0.1 * (100vw - 20rem));
+    height: 10vh;
+    color: white;
+    background-color: red;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none; 
+}
+

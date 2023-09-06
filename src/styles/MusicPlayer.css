@@ -1,0 +1,73 @@
+.MusicPlayer {
+    height: 16.5;
+    width: 100%;
+    background-color: #071330;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: white 1px solid;
+}
+
+.MusicPlayer-MetaData {
+    height: 7.25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0.1vh;
+}
+
+.MusicPlayer-MetaData > img {
+    height: 90%;
+    padding-left: 0.5vw;
+}
+
+.MusicPlayer-MetaData > h1 {
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 1vw;
+    overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Slider > h2 {
+    font-size: 0.9rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.Controls {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Controls > button {
+    background-color: #071330;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.3vh;
+    padding-top: 0.3vh;
+    height: 4vh;
+}
+
+.Controls > button > img {
+    height: 4vh;
+}
+
+.Pause{
+    height: 5vh;
+}

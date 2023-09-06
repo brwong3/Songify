@@ -1,0 +1,188 @@
+.Playlist-Content {
+    width: min(73vw, 100vw - 20rem);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Playlist-Settings  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    color: white;
+    padding: 1vh;
+}
+
+.Playlist-Settings > img {
+    width: 5%;
+}
+
+.Playlist-Settings > input {
+    height: 7vh;
+    border-radius: 20px;
+    border: none;
+    width: min(73vw * 0.9, (100vw - 20rem) * 0.9);
+    background-color: #071330;
+    display: flex;
+    color: white;
+    font-size: 2vh;
+    padding-left: 1vw;
+}
+
+.Playlist-Content >input::placeholder {
+    color: white;
+    padding-left: 2vw;
+}
+
+.Playlist-Content > input:focus {
+    outline: none;
+}
+
+.Playlist-Content > h1 {
+    margin-top: 3vh;
+    color: white;
+    font-size: 2.2rem;
+}
+
+.Content-Divider {
+    width: min(73vw * 0.89, (100vw - 20rem) * 0.89);
+    height: 0.1vh;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.MetaData {
+    color: white;
+    margin-top: 1vh;
+    display: flex;
+    width: min(73vw * 0.9, (100vw - 20rem) * 0.9);
+    justify-content: space-between;
+}
+
+.Songs {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.Songs::-webkit-scrollbar {
+    width: 1px;
+}
+
+.Settings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:27vh;
+    aspect-ratio: 2/1;
+    background-color: #071330;
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Settings > div {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Settings > div > button {
+    width: 30%;
+    height: 7vh;
+    font-size: 1.25rem;
+    background-color: #071330;
+    color: white;
+    border: 1px solid white;
+    /* color: #0B1320 */
+    border-radius: 50px;
+}
+
+.Question {
+    font-size: 1.5rem;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -3vh;
+}
+
+.Name {
+    font-size: 1.5rem;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -3vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.RenameQuestion {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Settings > input {
+    width: 80%;
+    height: 5vh;
+    color: #071330;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5vw;
+}
+
+.Settings > button {
+    border-radius: 50px;
+    font-size: 1.25rem;
+    width: 40%;
+    height: 5vh;
+    background-color: #071330;
+    border: white solid 1px;
+    color: white;
+}
+
+.MenuItem{
+    border-bottom: 1px solid white;
+}
+
+h6{
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0.8;
+}
+
+.Error {
+    margin: -2vw;
+    color: red;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.Spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    zoom: 2;
+}

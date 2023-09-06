@@ -1,0 +1,55 @@
+.Search {
+    width: min(73vw, 100vw - 20rem);
+    height: 15vh;
+}
+
+.Search > div {
+    width: min(73vw, 100vw - 20rem);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search > div > input {
+    height: 7vh;
+    border-radius: 20px;
+    border: none;
+    width: min(73vw * 0.9, (100vw - 20rem) * 0.9);
+    background-color: #071330;
+    padding-left: 2vw;
+    display: flex;
+    color: white;
+    font-size: 2vh;
+}
+
+.Search > div > input::placeholder {
+    color: white;
+    font-size: 2vh;
+}
+
+.Search > div > input:focus {
+    outline: none;
+}
+
+.Logo {
+    opacity: 20%;
+    width: 80%;
+    object-fit:cover;
+}
+
+.Connection {
+    opacity: 0.2;
+    width: 100%;
+    height: calc(93vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    zoom: 1.5;
+}
+
+.Connection > h1 {
+    padding: 1vh;
+}

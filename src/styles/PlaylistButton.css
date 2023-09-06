@@ -1,0 +1,23 @@
+.Playlist {
+    width: max(25vw, 18rem);
+    height: 7vh;
+    margin-top: 10px;
+    background-color: #071330;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+    font-size: 1.25vh;
+    border: none;
+    opacity: 90%
+    /* box-shadow: 0px 2px 2px 2px rgb(0, 0, 0); */
+}
+
+.Playlist-Underline {
+    width: 2vw;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 1vh;
+}
